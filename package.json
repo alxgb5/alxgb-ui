@@ -24,7 +24,7 @@
     "dev": "npm start",
     "start": "storybook dev -p 6006",
     "storybook": "npm start",
-    "build-docs": "storybook build -o docs && touch ./docs/.nojekyll",
+    "build-docs": "npm run build && storybook build -o docs && touch ./docs/.nojekyll",
     "lint": "eslint . --ext .ts,.tsx"
   },
   "peerDependencies": {
